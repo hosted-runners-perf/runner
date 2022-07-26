@@ -2,18 +2,7 @@ name: Runner CI
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-    - main
-    - releases/*
-    paths-ignore:
-    - '**.md'
-  pull_request:
-    branches:
-    - '*'
-    paths-ignore:
-    - '**.md'
-
+  
 jobs:
   build:
     strategy:
